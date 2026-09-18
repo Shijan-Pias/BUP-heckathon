@@ -310,7 +310,7 @@ Executes 24 varied paraphrased notes across multiple languages (English, Bengali
 
 ### Build the Production Container
 ```bash
-docker build -t gridwise-api:latest .
+docker build -t pias1111111/gridwise-api:v1 .
 ```
 
 ### Run the Container
@@ -320,7 +320,13 @@ docker run -d \
   -e GEMINI_API_KEY="your_api_key_here" \
   -e PORT=3000 \
   --name gridwise-service \
-  gridwise-api:latest
+  pias1111111/gridwise-api:v1
+```
+
+### Pull and Run from Docker Hub
+```bash
+docker pull pias1111111/gridwise-api:v1
+docker run -d -p 3000:3000 -e GEMINI_API_KEY="your_api_key_here" pias1111111/gridwise-api:v1
 ```
 
 ### Check Container Health
