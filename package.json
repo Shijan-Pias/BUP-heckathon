@@ -1,0 +1,41 @@
+{
+  "name": "gridwise-energy-api",
+  "version": "1.0.0",
+  "description": "GridWise Smart Campus Energy Optimization Service - BUP CSE Fest 2026",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "dev": "ts-node src/server.ts",
+    "test": "jest --runInBand",
+    "test:samples": "ts-node tests/sample-cases.test.ts"
+  },
+  "keywords": [
+    "gridwise",
+    "energy-optimization",
+    "linear-programming",
+    "llm",
+    "gemini"
+  ],
+  "author": "BUP CSE Fest 2026 GridWise Team",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "javascript-lp-solver": "^0.4.24",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.19",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
